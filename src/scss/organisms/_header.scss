@@ -5,10 +5,12 @@
   $c-header: rgba(0, 0, 0, 0.6);
   $c-menu-trigger: $c-black-blue;
 
-  position: absolute;
-  @media screen and (max-width: $width-md) {
-    position: relative;
-    border-bottom: 0 solid;
+  &--transparent {
+    position: absolute;
+    @media screen and (max-width: $width-md) {
+      position: relative;
+      border-bottom: 0 solid;
+    }
   }
 
   #primary-menu > ul {
