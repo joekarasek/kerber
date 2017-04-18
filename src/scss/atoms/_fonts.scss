@@ -82,6 +82,8 @@ h2 {
 	@media (max-width: $width-xs) {
 		line-height: 1.1;
 	}
+	font-family: $ff-dancing;
+	font-weight: 400;
 }
 
 @mixin h3() {

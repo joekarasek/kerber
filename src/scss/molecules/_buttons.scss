@@ -3,12 +3,14 @@ button.btn {
   font-family: $ff-raleway;
   font-weight: 700 !important;
 
-  background-color: #64BB31;
+  background-color: #EC008C;
   color: $c-white;
   border: 2px solid $c-white;
   border-radius: 30px;
   &:hover, &:focus {
-    background-color: darken(#64BB31, 15% );
+    //background-color: darken(#EC008C, 15% );
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
+    transition: box-shadow .3s ease;
     text-decoration: none;
     color: $c-white;
   }
