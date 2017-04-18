@@ -36,7 +36,11 @@
 
         {% include 'organisms/services.twig' %}
 
-        {% include 'organisms/tour--full-width.twig' %}
+        {% include 'organisms/tour.twig' with
+            {
+                "container": true
+            }
+        %}
 
         {% include 'organisms/location--three-column.twig' %}
 
