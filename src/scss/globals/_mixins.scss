@@ -103,16 +103,19 @@
 /// The Nav Color Mixin
 /// @param $color - the text color
 /// @param {number} $child [false] - the `nth-child`
-@mixin nav-color($color, $child:false) {
+@mixin nav-color($color, $child:false, $weight:400) {
   @if $child {
     li:nth-child(#{$child}) {
       & a {
         color: $color;
+        font-weight: $weight;
         &:hover {
           color: $color;
+          font-weight: $weight;
         }
         &>div {
           color: $color;
+          font-weight: $weight;
         }
       }
     }
@@ -120,11 +123,14 @@
     li {
       & a {
         color: $color;
+        font-weight: $weight;
         &:hover {
           color: $color;
+          font-weight: $weight;
         }
         &>div {
           color: $color;
+          font-weight: $weight;
         }
       }
     }

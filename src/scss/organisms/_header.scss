@@ -2,7 +2,7 @@
   width: 100%;
   height: 100px;
 
-  $c-header: rgba(0, 0, 0, 0.6);
+  $c-header: rgb(255, 255, 255);
   $c-menu-trigger: $c-black-blue;
 
   &--transparent {
@@ -16,10 +16,10 @@
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
-    @include nav-color(#ffffff);
-    //@include nav-color(#334663, 1);
-    //@include nav-color(#52931D, 2);
-    //@include nav-color(#7F658F, 3);
+    @include nav-color(#000000);
+    @include nav-color(#76479A, 1, 700);
+    @include nav-color(#00B1E3, 2, 700);
+    @include nav-color(#D0027C, 3, 700);
   }
 
   #primary-menu-trigger {
@@ -50,8 +50,9 @@
   
   //when you scroll down
   &.sticky-header {
-    #header-wrap {
-      background-color: #000000;
+    #primary-menu ul {
+      padding-top: 30px;
+      transition: padding-top .3s ease;
     }
   }
   #logo img {
@@ -73,6 +74,16 @@
     }
   }
 
+  //when you scroll down
+  #primary-menu ul {
+    padding-top: 30px;
+  }
+  &.sticky-header {
+    #primary-menu ul {
+      padding-top: 0;
+    }
+  }
+
   #primary-menu ul li {
     @media screen and (max-width: $width-md) {
       border-top: 1px solid white;
@@ -80,21 +91,20 @@
     }
   }
   #primary-menu ul li > a {
-    font-family: $ff-raleway;
-    font-weight: 400;
+    font-family: $ff-crimson;
     letter-spacing: 1px;
     text-transform: none;
     font-size: 17px;
-    padding: 38px 12px !important;
+    padding: 29px 12px;
     @media screen and (max-width: 1300px) {
       font-size: 16px;
-      padding: 38px 10px;
+      padding: 29px 10px;
       padding-bottom: 10px;
     }
     @media screen and (max-width: $width-lg) {
       font-size: 15px;
       letter-spacing: 0.7px;
-      padding: 38px 6px;
+      padding: 29px 6px;
       padding-bottom: 10px;
     }
     @media screen and (max-width: 1090px) {
@@ -120,11 +130,11 @@
 #header-wrap,
 #logo,
 #logo img {
-  height: 100px !important;
+  height: 150px !important;
   transition: height .4s ease, opacity .3s ease;
 }
 
 
 #header.sticky-header:not(.static-sticky), #header.sticky-header:not(.static-sticky) #header-wrap, #header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
-  height: 100px !important;
+  height: 80px !important;
 }
