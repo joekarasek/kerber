@@ -1,0 +1,76 @@
+#section-about {
+  background-color: #F1F1F1;
+
+  .heading {
+    h2{
+      color: #000000;
+      margin-bottom: 0;
+    }
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .card {
+    &--smith-lg .card__image {
+      background-image: url('/assets/team/dr-andy-lg.jpg');
+    }
+    &--bill-lg .card__image {
+      background-image: url('/assets/team/dr-bill_lg.jpg');
+    }
+  }
+
+  .about__quote-break {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+    .about__quote {
+      color: #000000;
+      &::first-line {
+        color: #64bb31;
+      }
+    }
+
+    .services-carousel {
+      .heading {
+        h2.title {
+          color: #3A5464;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+      &__carousel {
+        h5 {
+          text-align: center;
+          color: #577E93;
+          font-family: $ff-lato;
+          font-weight: 700;
+        }
+      }
+      .services-carousel--wrapper {
+        padding: 0 25px;
+      }
+      .services-carousel--image {
+        @include hover-plus();
+      }
+
+      .service-modal-wrapper {
+        padding-bottom: 30px;
+        h5 {
+          margin-bottom: 0;
+        }
+        img {
+          max-width: 200px;
+          @media screen and (max-width: $width-sm) {
+            display: none;
+          }
+        }
+        .modal-image {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+      }
+    }
+}
+

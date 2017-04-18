@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+{% include '/organisms/head.twig' %}
+
+<body class="stretched">
+
+<!-- Document Wrapper
+============================================= -->
+<div id="wrapper" class="clearfix">
+
+    {% include 'organisms/header.twig' %}
+
+    {% include 'organisms/marquee.twig' %}
+
+    <!-- Content
+  ============================================= -->
+
+    <div id="content" >
+
+        {% include 'molecules/cta__two-to-one.twig' with { 'id': 'id="cta-one"' } %}
+
+        {% include 'organisms/about.twig' %}
+
+        {% include 'organisms/specials.twig' %}
+
+        <div class="cta__two-to-one" id="cta-two">
+            <div class="container">
+                <div class="flex--wrapper">
+                    <div class="btn--wrapper flex--item">
+                        <h6 class="text">New Patient Hotline</h6>
+                        <h2 class="new-patient-number">
+                            <a href="tel:1-888-985-0068" class="phone-number phone-number--new">(888)&nbsp;985&#8209;0068</a>
+                        </h2>
+                    </div>
+                    <div class="new-patient flex--item">
+                        <a href="#" class="btn" data-target="#requestAppointmentForm" data-toggle="modal">Request An Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'organisms/reviews.twig' %}
+
+        {% include 'organisms/insurance.twig' %}
+
+        {% include 'organisms/services.twig' %}
+
+        {% include 'organisms/tour--full-width.twig' %}
+
+        {% include 'organisms/location--three-column.twig' %}
+
+    </div>
+
+    <!-- Request Appointment Modal
+    ============================================= -->
+    {% include 'organisms/request-modal.twig' %}
+
+    <!-- Footer
+    ============================================= -->
+    {% include 'organisms/footer.twig' %}
+
+</div><!-- #wrapper end -->
+
+{% include 'organisms/foot.twig' %}
+
+</body>
+</html>
