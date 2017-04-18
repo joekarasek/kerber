@@ -1,4 +1,4 @@
-#slider2 {
+#slider {
   //height: 80vh;
   //max-height: 800px;
   //min-height: 700px;
@@ -35,37 +35,39 @@
 
 
   .slide1 {
-    h1 {
-      color: white;
-      font-weight: 700;
-      margin-bottom: 5px;
+    .slide__title--meet {
+      color: #ec008c;
+      text-shadow: 2px 2px 8px #ffffff;
+      font-family: $ff-crimson;
+      margin-bottom: 0;
+      line-height: 0.8;
+      font-weight: 400;
+      @include font-size(110px, 80px, 65px, 40px, 40px);
+    }
+    .slide__title--kerber {
+      color: #0A6B70;
+      text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
+      margin-bottom: 0;
       line-height: 1;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
-    }
-    h2 {
-      color: white;
-      @include font-size(44px,
-              38px,
-              35px,
+      font-family: $ff-dancing;
+      @include font-size(120px,
+              90px,
+              80px,
               30px,
               30px);
       font-weight: 700;
-      line-height: 1.2;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
-    h4 {
-      @include font-size(28px,
-              22px,
-              35px,
+    .slide__copy {
+      @include font-size(32px,
+              30px,
+              30px,
               30px,
               30px);
-      color: white;
-      font-family: $ff-lato;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
-      text-transform: uppercase;
-    }
-    a {
-      margin-left: 5px;
+      color: black;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      line-height: 1;
+      font-weight: 400;
     }
   }
   .slide2 {
