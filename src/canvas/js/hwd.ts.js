@@ -137,7 +137,7 @@ var HelloWorldDevsTysonSteele = (function($,_) {
    * @param {object} customSettings optional - an object with custom configuration for the owl carousel. See owl carousel documentation for options.
    * @example HWD.serviceCarousel('js-service-carousel');
    */
-  var itemCarousel = function(target, customSettings) {
+  var pyramidCarousel = function(target, customSettings) {
     var defaultSettings = {
       items: 1,
       loop: true,
@@ -167,6 +167,27 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     $(target).owlCarousel(_.assign(defaultSettings, customSettings));
   };
 
+  var tourCarousel = function(target, customSettings) {
+    var defaultSettings = {
+      items: 1,
+      loop: true,
+      autoplay: true,
+      autoplaySpeed: 400,
+      autoplayTimeout: 6000,
+      autoplayHoverPause:true,
+      animateIn: 'fadeIn',
+      animateOut: 'fadeOut',
+      nav: true,
+      dots: false,
+      margin: 40,
+      navText: [
+        '<i class="icon-chevron-left"></i>',
+        '<i class="icon-chevron-right"></i>'
+      ],
+    };
+    $(target).owlCarousel(_.assign(defaultSettings, customSettings));
+  };
+
   /**
    * Stops videos inside of a modal when that modal is closed (assuming the video is provided by iframe).
    * @param {string} modalTarget A css selector string
@@ -185,9 +206,10 @@ var HelloWorldDevsTysonSteele = (function($,_) {
     requestAppointment: requestAppointment,
     marqueeCarousel: marqueeCarousel,
     googleMap: googleMap,
+    pyramidCarousel: pyramidCarousel,
     scrollToFix: scrollToFix,
-    itemCarousel: itemCarousel,
-    stopVideoModal: stopVideoModal
+    stopVideoModal: stopVideoModal,
+    tourCarousel: tourCarousel,
   };
 
 })(jQuery, _);
