@@ -33,21 +33,21 @@
   .new-patient {
     text-align: left;
     padding-left: 15px;
-    border-left: 1px solid black;
+    //border-left: 1px solid black;
     .text {
       color: #000000;
       margin-bottom: 0;
       font-weight: 400;
     }
     &-number {
-      color: #000000;
+      color: #EC008C;
       font-family: $ff-lato;
       font-weight: 700;
       margin-bottom: 0;
       line-height: 1;
       @include font-size(36px, 33px, 30px, 28px, 28px);
       a {
-        @include link-color(#000000);
+        @include link-color(#EC008C);
         &:hover {
           text-decoration: none;
         }
@@ -68,25 +68,10 @@
         margin-bottom: 0;
         font-weight: 400;
       }
-      &-number {
-        color: #000000;
-        font-family: $ff-lato;
-        font-weight: 700;
-        margin-bottom: 0;
-        line-height: 1;
-        @include font-size(36px, 33px, 30px, 28px, 28px);
-        a {
-          @include link-color(#000000);
-          &:hover {
-            text-decoration: none;
-          }
-        };
-      }
       text-align: right;
-      padding-bottom: 5px;
       padding-right: 15px;
       margin-right: -1px;
-      border-right: 2px solid black;
+      //border-right: 2px solid black;
       @media screen and (max-width: $width-md) {
         text-align: center;
         padding-right: 0;
@@ -96,10 +81,12 @@
   }
 
   .existing-patient {
-    font-family: $ff-lato;
     text-align: center;
     line-height: 1;
     .phone-number--existing {
+      @include  h5();
+      font-family: $ff-lato;
+      font-weight: 700;
       @include link-color(#000000);
       &:hover {
         text-decoration: none;
@@ -110,10 +97,17 @@
 }
 
 #cta-two {
-  @media screen and (max-width: $width-md) {
-    .btn--wrapper {
-      order: -1;
-      padding-bottom: 20px;
+  .btn--wrapper {
+    order: 1;
+    @media screen and (max-width: $width-md) {
+        order: 0;
+        padding-bottom: 20px;
+    }
+  }
+  .new-patient {
+    text-align: right;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
     }
   }
 }
