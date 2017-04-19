@@ -1,11 +1,10 @@
-
+$offset: -25px;
 
 .owl-carousel .owl-nav [class*=owl-] {
-  img { display: none; }
   position: absolute;
   top: 50%;
-  margin-top: -30px;
-  right: -35px;
+  //margin-top: -30px;
+  right: $offset;
   zoom: 1;
   width: 55px;
   height: 55px;
@@ -31,27 +30,19 @@
   }
 }
 .owl-carousel:hover .owl-nav [class*=owl-] img {
-  display: block;
+  //display: block;
   transition: display .3s ease;
 }
 .owl-carousel .owl-nav .owl-prev {
-  left: -35px;
-  img {
-    -moz-transform: scaleX(-1) translateY(-50%);
-    -o-transform: scaleX(-1) translateY(-50%);
-    -webkit-transform: scaleX(-1) translateY(-50%);
-    transform: scaleX(-1) translateY(-50%);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-  }
+  left: $offset;
 }
 
 .owl-carousel:hover .owl-nav .owl-next {
   left: auto;
-  right: -35px;
+  right: $offset;
 }
 .owl-carousel:hover .owl-nav .owl-prev {
-  left: -35px;
+  left: $offset;
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
