@@ -30,8 +30,10 @@
     &__item {
       list-style: none;
       h5 {
-        margin-bottom: 0;
+        margin-bottom: -12px;
         line-height: 1;
+        margin-top: 0px;
+        padding-top: 8px;
       }
       p {
         list-style: none;
@@ -45,6 +47,12 @@
         margin-right: 10px;
         font-size: 24px;
         color: #118E94;
+      }
+      a:hover {
+        .icon-ok-sign {
+          color: #22BBC3;
+          transition: color .3s ease;
+        }
       }
     }
   }
