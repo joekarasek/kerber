@@ -13,32 +13,32 @@
 
   // ======= Carousels =======
   HelloWorldDevsTysonSteele.marqueeCarousel({ autoplay: 6000 });
-  HelloWorldDevsTysonSteele.pyramidCarousel('.js-services-carousel', {
-    items: 2,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 400,
-    autoplayTimeout: 6000,
-    autoplayHoverPause:true,
-    nav: true,
-    dots: false,
-    margin: 20,
-    responsive: {
-      480: {
-        items: 2
-      },
-      768: {
-        items: 3
-      },
-      992: {
-        items: 4
-      }
-    },
-    navText: [
-      '<img src="assets/carousel-arrow.png" alt="left navigation arrow">',
-      '<img src="assets/carousel-arrow.png" alt="right navigation arrow">'
-    ]
-  });
+  // HelloWorldDevsTysonSteele.pyramidCarousel('.js-services-carousel', {
+  //   items: 2,
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 400,
+  //   autoplayTimeout: 6000,
+  //   autoplayHoverPause:true,
+  //   nav: true,
+  //   dots: false,
+  //   margin: 20,
+  //   responsive: {
+  //     480: {
+  //       items: 2
+  //     },
+  //     768: {
+  //       items: 3
+  //     },
+  //     992: {
+  //       items: 4
+  //     }
+  //   },
+  //   navText: [
+  //     '<img src="assets/carousel-arrow.png" alt="left navigation arrow">',
+  //     '<img src="assets/carousel-arrow.png" alt="right navigation arrow">'
+  //   ]
+  // });
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
     items: 1,
     navText: [

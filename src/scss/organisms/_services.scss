@@ -1,36 +1,52 @@
 #section-services {
-  background-color: #F1F1F1;
+  background-image: url('/assets/services-section.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  .mobile-services-image {
+    display: none;
+    @media (max-width: $width-sm - 1) {
+      margin-top: -100px;
+      display: block;
+    }
+  }
+
   .heading {
-    text-align: center;
+    text-align: left;
     h2 {
-      color: #000000;
-      font-weight: 700;
-      text-align: center;
+      color: #118E94;
       margin-bottom: 10px;
       padding-top: $spacing-md;
       padding-bottom: $spacing-sm;
-
+    }
+    h5 {
+      line-height: 1;
     }
   }
-  .card--family .card__image {
-    background-position: 80% center;
-  }
-  .card--family .card__image::before {
-    content: 'Pictured: Andy Smith, DDS and his family';
-    color: #ffffff;
-    bottom: 0;
-    left: 15px;
-    position: absolute;
-    text-shadow: 0 2px 2px black;
+
+  .service-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__item {
+      list-style: none;
+      h5 {
+        margin-bottom: 0;
+        line-height: 1;
+      }
+      p {
+        list-style: none;
+        font-size: 21px;
+        font-family: $ff-crimson;
+        margin-bottom: 0;
+        line-height: 1.1;
+      }
+      .icon-ok-sign {
+        float: left;
+        margin-right: 10px;
+        font-size: 24px;
+        color: #118E94;
+      }
+    }
   }
 
-  .card--crowns .card__image {
-    background-position: 15% center;
-  }
-  .card--smile .card__image {
-     background-position: 75% center;
-   }
-  .card--dentures .card__image {
-    background-position: 15% center;
-  }
 }
