@@ -9,12 +9,12 @@
 body {
 	color: $c-black;
 	line-height: 1.5;
-	font-family: $ff-lato;
+	font-family: $ff-crimson;
 }
 
 p {
 	margin-bottom: $spacing-sm;
-	font-family: $ff-lato;
+	font-size: 16px;
 }
 
 /// @group typography
@@ -108,7 +108,7 @@ h4 {
 
 @mixin h5() {
 	@include headings();
-	@include font-size(21px, 20px, 19px, 18px, 13px);
+	@include font-size(21px, 20px, 20px, 19px, 18px);
 	font-weight: 400;
 }
 
@@ -129,10 +129,11 @@ h6 {
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	@media screen and (max-width: $width-sm) {
-		font-size: 16px;
+		font-size: 15px;
 	}
+	font-weight: 400;
 }
 
 #logo {
@@ -178,4 +179,8 @@ p {
 #section-services h5,
 #section-services-two h5 {
 	margin-bottom: 10px;
+}
+
+#content p {
+	line-height: 1.2;
 }
