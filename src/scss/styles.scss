@@ -32,3 +32,7 @@
     display: none;
   }
 }
+
+a[data-target^="#team-"]:hover {
+  text-decoration: none;
+}
