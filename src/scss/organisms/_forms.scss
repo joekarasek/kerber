@@ -1,31 +1,56 @@
 #section-forms {
-  padding: 45px 0;
-  .forms--wrapper {
-    border: 2px solid #5F5B4A;
-    padding-top: 15px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  h2 {
-    color: #014377;
-    margin-bottom: 0;
-  }
-  h5 {
-    font-family: $ff-josef;
-    color: #585756;
-  }
-  .btn {
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    &__one {
-      background-color: #00939A;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #338ee7;
+  .heading {
+    &__title {
+      color: #f7eb3f;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.31);
+      margin-bottom: 0;
     }
-    &__two {
-      background-color: #85B04B;
-    }
-    &__three {
-      background-color: #0061A3;
+    &__copy {
+      color: #ffffff;
     }
   }
+  .sub-header {
+    padding: 15px 0;
+    &__title {
+      color: #f7eb3f;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.31);
+      margin-bottom: 0;
+    }
+  }
+
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    .form-button {
+      padding: 0 5px;
+      margin-bottom: 10px;
+
+      .btn--form {
+        font-size: 15px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.81);
+        border: 2px solid white;
+        font-family: $ff-lato;
+        font-weight: 700;
+        color: #000000;
+        &:hover {
+        background-color: #ffffff;
+      }
+      }
+      width: 100%;
+      @media (min-width: $width-xs) {
+        width: 50%;
+      }
+      @media (min-width: $width-md + 1) {
+        width: 235px;
+      }
+    }
+  }
+
 }

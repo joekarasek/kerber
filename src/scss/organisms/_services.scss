@@ -3,6 +3,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 75% center;
+  @media (max-width: $width-sm - 1) {
+    background-image: none;
+    background-color: #ffffff;
+  }
   .mobile-services-image {
     display: none;
     @media (max-width: $width-sm - 1) {
@@ -29,6 +33,7 @@
     padding-bottom: 30px;
     &__item {
       list-style: none;
+      clear: both;
       h5 {
         margin-bottom: -12px;
         line-height: 1;
