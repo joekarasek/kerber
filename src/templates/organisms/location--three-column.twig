@@ -46,9 +46,7 @@
                 <a class="btn align-fix location-card__btn" data-toggle="modal" data-target="#requestAppointmentForm">Request Appointment</a>
 
             </div>
-            <div class="google-map">
-                <a href="{{ googleMap }}" target="_blank"><div id="google-map5" class="gmap"></div></a>
-            </div>
+            {% include 'atoms/google-map.twig' %}
         </div>
     </div>
 </section>
