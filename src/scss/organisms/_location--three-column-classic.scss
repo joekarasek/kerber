@@ -1,0 +1,24 @@
+.location--three-column-classic {
+  text-align: center;
+  @media (max-width: $width-md) {
+    .mobile-logo {
+      margin-top: -200px;
+    }
+  }
+
+  .location__three-column-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: -400px;
+
+    @media (max-width: $width-md) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+  }
+    .location__column {
+      text-align: center;
+    }
+}
