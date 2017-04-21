@@ -23,6 +23,15 @@ p {
 	font-family: $ff-crimson;
 	font-weight: 700;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000000;
+}
+
 
 
 #logo,
@@ -98,7 +107,7 @@ h3 {
 
 @mixin h4() {
 	@include headings();
-	@include font-size(27px, 22px, 20px, 22px, 22px);
+	@include font-size(28px, 26px, 24px, 24px, 22px);
 }
 
 .h4,
@@ -108,7 +117,7 @@ h4 {
 
 @mixin h5() {
 	@include headings();
-	@include font-size(21px, 20px, 20px, 19px, 18px);
+	@include font-size(22px, 21px, 21px, 20px, 19px);
 	font-weight: 400;
 }
 
@@ -119,7 +128,7 @@ h5 {
 
 @mixin h6() {
 	@include headings();
-	@include font-size(18px, 18px, 18px, 16px, 11px);
+	@include font-size(19px, 19px, 18px, 18px, 18px);
 	font-weight: 400;
 }
 
