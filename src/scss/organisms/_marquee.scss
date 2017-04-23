@@ -1,17 +1,17 @@
 #marquee-slider {
 
 
-  .swiper-slide.slide1 {
-    background-image: url('/assets/slide1.jpg');
-    background-position: 30% center;
-  }
-  .swiper-slide.slide2 {
-    background-image: url('/assets/slide3.jpg');
-  }
-  .swiper-slide.slide3 {
-    background-image: url('/assets/slide2.jpg');
-    background-position: 30% center;
-  }
+  //.swiper-slide.slide1 {
+  //  background-image: url('assets/slide1.jpg');
+  //  background-position: 30% center;
+  //}
+  //.swiper-slide.slide2 {
+  //  background-image: url('assets/slide3.jpg');
+  //}
+  //.swiper-slide.slide3 {
+  //  background-image: url('assets/slide2.jpg');
+  //  background-position: 30% center;
+  //}
 
   .swiper-slide {
     > img {
@@ -79,31 +79,42 @@
       color: #ec008c;
       @include font-size(45px, 38px, 30px, 30px, 30px);
     }
-
+    .preventative-copy {
+      font-weight: 400;
+      line-height: 1;
+    }
+    .btn {
+      @include lr-padding(75px, 65px, 20px, 20px, 20px);
+    }
   }
   .slide3 {
-    h1 {
-      @include font-size(70px, 58px, 55px, 65px, 65px);
-      color: white;
+    .title {
+      color: #ec008c;
       font-weight: 700;
-      margin-bottom: 5px;
+      margin-bottom: 0;
       line-height: 1;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      font-family: $ff-dancing;
       @media screen and (min-width: $width-md - 1) { padding-top: 40px; }
     }
-    h2 {
-      color: white;
-      @include font-size(44px, 35px, 35px, 32px, 32px);
-      font-family: $ff-lato;
+    .title-2 {
       font-weight: 700;
-      line-height: 1.2;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
+      color: #0A6B70;
+      margin-bottom: 10px;
+      line-height: 1;
+      font-family: $ff-dancing;
+      padding-left: 30px;
     }
-    h3 {
-      color: white;
+    .stars {
+      line-height: 1.1;
+      margin-bottom: 0;
+    }
+    .icon-star3 {
+      text-shadow: none;
+      color: #f7eb3f;
+    }
+    .copy {
+      font-weight: 400;
       line-height: 1.2;
-      font-family: $ff-lato;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 1);
     }
     .btn {
       @include lr-padding(80px, 60px, 60px);

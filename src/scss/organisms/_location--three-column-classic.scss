@@ -1,8 +1,11 @@
 .location--three-column-classic {
   text-align: center;
-  @media (max-width: $width-md) {
-    .mobile-logo {
+  .mobile-logo {
+    @media (max-width: $width-md) {
       margin-top: -200px;
+    }
+    @media (max-width: $width-xs) {
+      margin-top: -150px;
     }
   }
 
@@ -22,6 +25,10 @@
       text-align: center;
     }
 
+  h5 {
+    @include font-size(20px, 19px, 19px, 19px, 18px);
+  }
+
   .location {
     &__doctor {
       color: #338ee7;
@@ -30,6 +37,7 @@
     }
     &__doctor-sub {
       color: #000000;
+      margin-bottom: 10px;
     }
     &__address {
       line-height: 1.2;
@@ -37,6 +45,8 @@
     &__map-link {
       color: #ec008c;
       text-decoration: underline;
+      line-height: 1.1;
+      margin-bottom: 10px;
     }
     &__fax {
       font-family: $ff-lato;
