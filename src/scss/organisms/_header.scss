@@ -3,7 +3,7 @@
   height: 100px;
 
   $c-header: rgb(255, 255, 255);
-  $c-menu-trigger: $c-black-blue;
+  $c-menu-trigger: black;
 
   &--transparent {
     position: absolute;
@@ -26,13 +26,13 @@
     font-size: 30px;
     pointer-events: auto;
     float: left;
-    top: 25px;
+    top: 15px;
   }
   #header-wrap {
     background-color: $c-header;
     border-bottom: 0;
     @media screen and (max-width: $width-md) {
-      background-color: #4A4A4A;
+      background-color: #fffff;
     }
   }
   #logo {
@@ -43,7 +43,7 @@
   }
 
   .icon-reorder {
-    color: #ffffff;
+    color: $c-menu-trigger;
   }
 
 
@@ -86,8 +86,9 @@
 
   #primary-menu ul li {
     @media screen and (max-width: $width-md) {
-      border-top: 1px solid white;
-      background-color: #4A4A4A;
+      border-top: 1px solid #00B1E3;
+      border-bottom: 1px solid #00B1E3;
+      background-color: white;
     }
   }
   #primary-menu ul li > a {
@@ -132,6 +133,9 @@
 #logo img {
   height: 150px !important;
   transition: height .4s ease, opacity .3s ease;
+  @media (max-width: $width-md) {
+  height: 80px !important;
+  }
 }
 
 

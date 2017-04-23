@@ -36,3 +36,12 @@
 a[data-target^="#team-"]:hover {
   text-decoration: none;
 }
+
+#cta-two {
+  .btn {
+    &--wrapper {
+      padding-left: 15px;
+      text-align: left;
+    }
+  }
+}
