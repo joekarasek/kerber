@@ -34,6 +34,12 @@
   }
 }
 
+.modal-content {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
 .modal-header {
   button.close {
     font-family: sans-serif;
@@ -42,12 +48,14 @@
     opacity: 0.8;
     margin-top: -10px;
   }
+  border-bottom: none;
 }
 
 .modal-title {
   font-weight: 700;
   margin: 0;
-  line-height: 1.5;
+  margin-top: 15px;
+  line-height: 1;
 }
 
 .modal-image {
