@@ -12,10 +12,10 @@
         <div class="location__column location__column--two">
             <img src="assets/kerber-footer-logo.svg" alt="Kerber Pediatric Dentistry" class="hidden-xs hidden-sm">
             <h5 class="new-patient-text">New Patient Hotline</h5>
-            <h3 class="new-patient-phone"><a href="{{ newPhone }}">{{ newPhoneNoBreak }}</a></h3>
+            <h3 class="new-patient-phone"><a href="tel:{{ newPhone }}">{{ newPhoneNoBreak }}</a></h3>
             <div class="location__btn-wrapper hidden-md hidden-lg">{% include 'atoms/request-appointment-button.twig' %}</div>
             <h5 class="existing-patient-text">Existing Patients Call</h5>
-            <h4 class="existing-patient-phone"><a href="{{ existingPhone }}">{{ existingPhoneNoBreak }}</a></h4>
+            <h4 class="existing-patient-phone"><a href="tel:{{ existingPhone }}">{{ existingPhoneNoBreak }}</a></h4>
         </div>
         <div class="location__column location__column--three">
             <h3 class="location__hours-header">Office Hours</h3>

@@ -94,6 +94,7 @@
       margin-bottom: 0;
       line-height: 1;
       font-family: $ff-dancing;
+      text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
       @media screen and (min-width: $width-md - 1) { padding-top: 40px; }
     }
     .title-2 {
@@ -103,6 +104,7 @@
       line-height: 1;
       font-family: $ff-dancing;
       padding-left: 30px;
+      text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
     }
     .stars {
       line-height: 1.1;

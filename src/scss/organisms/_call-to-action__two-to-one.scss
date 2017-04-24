@@ -100,8 +100,10 @@
   .btn--wrapper {
     order: 1;
     @media screen and (max-width: $width-md) {
-        order: 0;
-        padding-bottom: 20px;
+      text-align: center;
+      padding-left: 0;
+      order: 0;
+      padding-bottom: 20px;
     }
   }
   .new-patient {

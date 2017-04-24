@@ -20,6 +20,16 @@
     @include nav-color(#76479A, 1, 700);
     @include nav-color(#00B1E3, 2, 700);
     @include nav-color(#D0027C, 3, 700);
+    //Fix for alignment issue with bold font weight of Crimson Text font
+    li:nth-child(1) a>div {
+      padding-top: 3px;
+    }
+    li:nth-child(2) a>div {
+      padding-top: 3px;
+    }
+    li:nth-child(3) a>div {
+      padding-top: 3px;
+    }
   }
 
   #primary-menu-trigger {

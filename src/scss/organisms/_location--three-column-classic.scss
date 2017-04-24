@@ -76,6 +76,10 @@
         font-family: $ff-lato;
         font-weight: 700;
         line-height: 1;
+        a:hover {
+          color: #ec008c;
+          text-decoration: none;
+        }
       }
       .existing-patient-text {
         margin-bottom: 0;
@@ -84,6 +88,10 @@
       .existing-patient-phone {
         font-weight: 700;
         font-family: $ff-lato;
+        a:hover {
+          color: #000000;
+            text-decoration: none;
+        }
       }
     }
 
