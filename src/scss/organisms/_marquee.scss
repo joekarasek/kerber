@@ -1,17 +1,10 @@
 #marquee-slider {
 
-
-  //.swiper-slide.slide1 {
-  //  background-image: url('assets/slide1.jpg');
-  //  background-position: 30% center;
-  //}
-  //.swiper-slide.slide2 {
-  //  background-image: url('assets/slide3.jpg');
-  //}
-  //.swiper-slide.slide3 {
-  //  background-image: url('assets/slide2.jpg');
-  //  background-position: 30% center;
-  //}
+  .swiper-container,
+  .swiper-wrapper,
+  .swiper-slide {
+    background-color: white;
+  }
 
   .swiper-slide {
     > img {

@@ -78,6 +78,7 @@ module.exports = {
     enabled: true,
     sources: [
       'src/index.twig',
+      'src/accessibility.twig',
     ],
     dest: 'build/',
     lint: true,

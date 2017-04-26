@@ -9,12 +9,9 @@
     .logo {
       text-align: center;
       padding: 30px 0;
-      width: 100%;
-      @media (min-width: $width-xs) {
-        width: 50%;
-      }
-      @media (min-width: $width-md + 1) {
-        width: auto;
+      width: 50%;
+      @media (min-width: $width-sm) {
+        width: 25%;
       }
     }
 }
