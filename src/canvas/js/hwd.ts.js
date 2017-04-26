@@ -117,37 +117,16 @@ var HelloWorldDevsTysonSteele = (function($,_) {
       $primaryMenu.find('a').attr('data-offset', '-5');
     }
 
-    // Watch for scroll events are reset
-    $(window).scroll(function() {
-      console.log("scroll event");
-      console.log($('#header').hasClass('sticky-header'));
-      if ($('#header').hasClass('.sticky-header')) {
-        $primaryMenu.find('a').each(function(index) {
-          $(this).attr('data-offset', "150");
-        });
-      } else {
-        $primaryMenu.find('a').each(function(index) {
-          $(this).attr('data-offset', '80');
-        });
-      }
-    });
-
     // Watch for window resize events to toggle offset values
     $(window).resize(function() {
       if ($(window).width() < 992) {
         // sets all menu offset to zero for mobile
         $primaryMenu.find('a').attr('data-offset', '-5');
       } else {
-        if ($('#header').hasClass('sticky-header')) {
-          $primaryMenu.find('a').each(function(index) {
-            $(this).attr('data-offset', "80");
-          });
-        } else {
-          // resets all menu offsets to origin value
-          $primaryMenu.find('a').each(function(index) {
-            $(this).attr('data-offset', menuOffsets[index]);
-          });
-        }
+        // resets all menu offsets to origin value
+        $primaryMenu.find('a').each(function(index) {
+          $(this).attr('data-offset', menuOffsets[index]);
+        });
       }
     });
   };
