@@ -132,6 +132,18 @@
     }
     padding-bottom: 10px;
   }
+
+  #primary-menu__sticky {
+    display: none;
+  }
+  &.sticky-header {
+    #primary-menu__sticky {
+      display: inline-block;
+    }
+    #primary-menu__page-top {
+      display: none;
+    }
+  }
 }
 
 
